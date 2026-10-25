@@ -1,0 +1,12 @@
+execute at @n[tag=camera_interaction_1] run tp @n[tag=Text_camera_display_0] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_2] run tp @n[tag=Text_camera_display_1] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_3] run tp @n[tag=Text_camera_display_2] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_4] run tp @n[tag=Text_camera_display_3] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_5] run tp @n[tag=Text_camera_display_4] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_6] run tp @n[tag=Text_camera_display_5] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_7] run tp @n[tag=Text_camera_display_6] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_8] run tp @n[tag=Text_camera_display_7] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_9] run tp @n[tag=Text_camera_display_8] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_10] run tp @n[tag=Text_camera_display_9] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_11] run tp @n[tag=Text_camera_display_10] ~ ~.1 ~-0.2
+execute at @n[tag=camera_interaction_12] run tp @n[tag=Text_camera_display_11] ~ ~.1 ~-0.2

@@ -1,0 +1,13 @@
+{
+    "asset_id": "bbs:floor_two",
+    "width": 4,
+    "height": 2,
+    "title": {
+        "text": "2 Этаж",
+        "color": "yellow"
+    },
+    "author": {
+        "text": "BlueBerryStudio",
+        "color" : "blue"
+    }
+}

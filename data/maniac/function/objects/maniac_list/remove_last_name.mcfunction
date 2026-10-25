@@ -1,0 +1,1 @@
+$execute if data storage efm maniac_list[{s:{name:"$(name)"}}].s.name run data modify storage minecraft:efm maniac_list[{s:{name:"$(name)"}}].s.name set value "Рандом"

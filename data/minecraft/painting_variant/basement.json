@@ -1,0 +1,13 @@
+{
+    "asset_id": "bbs:basement",
+    "width": 4,
+    "height": 2,
+    "title": {
+        "text": "Подвал",
+        "color": "yellow"
+    },
+    "author": {
+        "text": "BlueBerryStudio",
+        "color": "blue"
+    }
+}

@@ -1,0 +1,1 @@
+$execute on target unless items entity @s weapon.mainhand minecraft:tripwire_hook[minecraft:custom_data~{key:"$(key)"}] run return 1

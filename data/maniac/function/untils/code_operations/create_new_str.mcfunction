@@ -1,0 +1,1 @@
+$data modify storage efm converter.nbt.text set value '$(prestr)$(char)$(poststr)'

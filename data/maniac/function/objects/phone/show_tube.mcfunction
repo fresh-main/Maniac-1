@@ -1,0 +1,1 @@
+execute at @n[tag=phone_station] run tp @e[tag=phone_tube] ^ ^ ^ ~ ~

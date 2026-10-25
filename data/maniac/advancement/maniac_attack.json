@@ -1,0 +1,16 @@
+{
+  "criteria": {
+      "requirement": {
+          "trigger": "minecraft:player_hurt_entity",
+          "conditions": {
+              "entity": {
+                  "type": "minecraft:player",
+                  "team": "peaceful"
+              }
+          }
+      }
+  },
+  "rewards": {
+      "function": "maniac:in_game/player/damage/maniac_attack"
+  }
+}

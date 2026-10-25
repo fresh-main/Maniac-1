@@ -1,0 +1,2 @@
+function maniac:objects/phone/remove_interaction
+function maniac:objects/phone/summon_interaction

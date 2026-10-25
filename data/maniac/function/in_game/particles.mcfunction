@@ -1,0 +1,1 @@
+particle minecraft:dripping_dripstone_water ~ ~0.3 ~ 00.1 0.3 00.1 0 1 normal

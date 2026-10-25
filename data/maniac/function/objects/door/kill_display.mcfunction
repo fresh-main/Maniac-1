@@ -1,0 +1,1 @@
+$kill @e[tag=$(door_kill_tag),type=block_display]

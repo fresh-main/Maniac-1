@@ -1,0 +1,1 @@
+summon minecraft:painting -122 11 13 {facing:2b,Invulnerable:true,Tags:["CameraDisplay"],variant:"minecraft:floor_one"}

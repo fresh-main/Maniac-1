@@ -1,0 +1,1 @@
+fill -133 3 -7 -133 1 -5 minecraft:polished_blackstone_wall

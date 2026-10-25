@@ -1,0 +1,1 @@
+return run execute on vehicle if data entity @s item

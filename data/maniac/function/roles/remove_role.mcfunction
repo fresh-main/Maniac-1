@@ -1,0 +1,1 @@
+$function maniac:ztrash/roles/remove_role {role:"$(role)",sendFeedback:true}

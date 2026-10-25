@@ -1,0 +1,6 @@
+execute store result score player_count global_data if entity @a
+execute if score player_count global_data matches 1 run return run execute on target run title @s actionbar {"text":"Недостаточно игроков, минимальное количество - 2","color":"red"}
+execute if score maniac_count config matches 1 unless score player_count global_data matches 2.. run return run execute on target run title @s actionbar {"text":"Слишком мало игроков, минимальное количество при 1 маньяке - 2","color":"red"}
+execute if score maniac_count config matches 2 unless score player_count global_data matches 3.. run return run execute on target run title @s actionbar {"text":"Слишком мало игроков, минимальное количество при 2 маньяках - 3","color":"red"}
+execute if score maniac_count config matches 3 unless score player_count global_data matches 4.. run return run execute on target run title @s actionbar {"text":"Слишком мало игроков, минимальное количество при 3 маньяках - 4","color":"red"}
+function maniac:out_game/start

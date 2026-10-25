@@ -1,0 +1,1 @@
+$data modify storage efm select_pos set from storage efm select_pos[$(random)]

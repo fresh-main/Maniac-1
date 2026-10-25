@@ -1,0 +1,1 @@
+$execute store result score temp global_data if data storage efm maniac_list[$(num)].s{name:"$(name)"}

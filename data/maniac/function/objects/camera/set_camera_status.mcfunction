@@ -1,0 +1,1 @@
+$data modify storage efm camera_status[$(camera)] set value $(status)

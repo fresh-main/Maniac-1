@@ -1,0 +1,1 @@
+$execute store result score temp global_data run data get storage efm camera_status[$(camera)]

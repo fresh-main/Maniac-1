@@ -1,0 +1,1 @@
+execute as @e[tag=numpad] at @s positioned ~0.06 ~0.04 ~ run function maniac:objects/computer/respawn_numpad

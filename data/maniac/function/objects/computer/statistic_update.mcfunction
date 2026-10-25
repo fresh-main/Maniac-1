@@ -1,0 +1,1 @@
+data modify entity @n[tag=pc_display5] text set value '["First Engine:          ",{"storage": "efm","nbt": "statistic.gen1"},"\\nSecond Engine:       ",{"storage": "efm","nbt": "statistic.gen2"},"\\n\\n",{"storage": "efm","nbt": "statistic.elevator"}]'

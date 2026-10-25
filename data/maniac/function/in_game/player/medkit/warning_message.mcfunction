@@ -1,0 +1,2 @@
+advancement revoke @s only maniac:warning_message
+execute if score @s count_medkit_used >= max_medkits_using config run title @s actionbar {"text": "Мне не стоит использовать столько таблеток, иначе мне станет плохо...","color": "yellow"}

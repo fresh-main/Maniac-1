@@ -1,0 +1,1 @@
+$execute unless entity $(name) run function maniac:objects/maniac_list/remove_last_name {name:"$(name)"}

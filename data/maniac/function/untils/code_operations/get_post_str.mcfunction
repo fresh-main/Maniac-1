@@ -1,0 +1,1 @@
+$data modify storage efm converter.poststr set string storage efm converter.nbt.text $(char_pos)

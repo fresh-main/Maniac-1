@@ -1,0 +1,1 @@
+$execute positioned $(select_pos) run function maniac:in_game/item_spawn/summon

@@ -1,0 +1,1 @@
+$execute store result storage efm xp int $(temp) run scoreboard players get @s stamina

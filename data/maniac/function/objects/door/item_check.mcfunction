@@ -1,0 +1,1 @@
+return run function maniac:objects/door/key_check with entity @s Passengers[0].data

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:book"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "maniac:in_game/player/medkit/max"
+  }
+}

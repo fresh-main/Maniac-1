@@ -1,0 +1,1 @@
+$bossbar set minecraft:timer name "$(minutes):$(seconds)"

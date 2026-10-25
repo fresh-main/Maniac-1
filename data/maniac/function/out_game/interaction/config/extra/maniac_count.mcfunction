@@ -1,0 +1,1 @@
+function maniac:objects/maniac_list/update

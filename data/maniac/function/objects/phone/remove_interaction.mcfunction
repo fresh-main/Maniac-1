@@ -1,0 +1,1 @@
+kill @e[tag=phone_interaction]

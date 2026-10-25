@@ -1,0 +1,1 @@
+data modify storage efm maniac_list[0].s.name set value ""

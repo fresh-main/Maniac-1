@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "hit_maniac_with_crowbar": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "maniac"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "maniac:in_game/player/crowbar/try"
+  }
+}

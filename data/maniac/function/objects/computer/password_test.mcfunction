@@ -1,0 +1,1 @@
+$return run execute if data storage minecraft:efm converter.nbt{text:"$(door)"}

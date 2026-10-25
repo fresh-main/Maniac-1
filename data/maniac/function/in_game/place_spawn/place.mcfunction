@@ -1,0 +1,1 @@
+$execute positioned $(select_pos) run function maniac:in_game/place_spawn/tp

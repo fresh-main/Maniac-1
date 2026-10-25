@@ -1,0 +1,1 @@
+$team join maniac @a[team=peaceful,sort=random,limit=$(num)]
