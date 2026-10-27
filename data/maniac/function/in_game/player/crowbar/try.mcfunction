@@ -3,6 +3,7 @@ execute unless score game_state global_data matches 1 run return 0
 execute unless entity @s[team=peaceful] run return 0
 execute unless items entity @s weapon.mainhand minecraft:tripwire_hook[minecraft:custom_data~{key:"монтировка"}] run return 0
 execute if score @s crowbar_cooldown matches 1.. run return run title @s actionbar {"text":"Монтировка ещё перезаряжается","color":"gray"}
+execute unless entity @a[team=maniac,distance=..3.5] run return run title @s actionbar {"text":"Рядом нет маньяка","color":"gray"}
 scoreboard players set @s crowbar_cooldown 200
 scoreboard players set @s crowbar_seconds 10
 execute as @a[team=maniac,distance=..3.5,sort=nearest,limit=1] at @s run function maniac:in_game/player/crowbar/stun

@@ -1,6 +1,6 @@
 kill @e[tag=radio_display]
 kill @e[tag=radio_interaction]
-clear @a iron_ingot[custom_data={item:"radio"}]
+clear @a spyglass[custom_data={item:"radio"}]
 scoreboard players set radio_charge global_data 0
 scoreboard players set radio_call_timer global_data 0
 scoreboard players set radio_call_state global_data 0
