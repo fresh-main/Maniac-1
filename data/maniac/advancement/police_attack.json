@@ -3,6 +3,9 @@
       "requirement": {
           "trigger": "minecraft:player_hurt_entity",
           "conditions": {
+              "player": {
+                  "team": "police"
+              },
               "entity": {
                   "type": "minecraft:player",
                   "team": "maniac"
