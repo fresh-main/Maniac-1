@@ -26,6 +26,8 @@ execute as @a[team=maniac] run function maniac:in_game/player/maniac/settings
 
 data modify storage efm switch.firstGeneratorWorking set value 0
 data modify storage efm switch.secondGeneratorWorking set value 0
+data modify storage efm switch.checkpointGenerator1 set value 0
+data modify storage efm switch.checkpointGenerator2 set value 0
 data modify storage efm switch.elevatorWorking set value 0
 data modify storage efm switch.electricity set value 0
 data modify storage efm switch.phoneHasConnection set value 0
@@ -37,6 +39,17 @@ scoreboard players set game_state global_data 1
 scoreboard players add total game_count 1
 scoreboard players add @a game_count 1
 scoreboard players set escaped global_data 0
+scoreboard players set boat_used global_data 0
+scoreboard players set boat_motor global_data 0
+scoreboard players set boat_fuel global_data 0
+scoreboard players set boat_seats global_data 0
+kill @e[tag=escape_boat]
+kill @e[tag=boat_seat]
+kill @e[tag=boat_seat_interaction]
+kill @e[tag=boat_motor_interaction]
+kill @e[tag=boat_motor_display]
+tag @a remove boat_rider
+data remove storage efm boat.spawned
 scoreboard players set @a count_medkit_used 0
 scoreboard players set limit_camera_break global_data 12
 
@@ -64,6 +77,9 @@ schedule function maniac:out_game/clear 1s
 schedule function maniac:out_game/clear 2s
 setblock -152 1 5 minecraft:cauldron
 setblock -138 19 15 minecraft:cauldron
+execute if score location_index config matches 1 run setblock -51 8 -189 minecraft:air
+execute if score location_index config matches 1 run setblock 29 9 -179 minecraft:cauldron
+execute if score location_index config matches 1 run setblock 11 9 -173 minecraft:cauldron
 
 rotate @n[tag=camera_0] 135 15
 rotate @n[tag=camera_1] -135 45

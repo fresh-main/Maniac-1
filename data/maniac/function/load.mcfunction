@@ -1,4 +1,5 @@
 scoreboard objectives add global_data dummy
+data modify storage efm boat set value {enabled:1b,x:54.0d,y:8.0d,z:-86.0d,yaw:0.0f}
 scoreboard objectives add config dummy
 scoreboard objectives add game_health dummy
 scoreboard objectives add health health
