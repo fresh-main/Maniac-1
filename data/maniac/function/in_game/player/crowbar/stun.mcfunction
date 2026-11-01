@@ -1,1 +1,1 @@
-function maniac:in_game/player/maniac/stan {tick:60,second:3}
+function maniac:in_game/player/maniac/stan {tick:200,second:10}

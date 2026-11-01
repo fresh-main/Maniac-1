@@ -2,4 +2,4 @@
 execute unless data storage efm boat{enabled:1b} run return 0
 execute if score boat_used global_data matches 1 run return 0
 execute if entity @e[tag=escape_boat] run return 0
-function maniac:objects/boat/spawn_at with storage efm boat
+execute in minecraft:overworld run function maniac:objects/boat/spawn_at with storage efm boat
