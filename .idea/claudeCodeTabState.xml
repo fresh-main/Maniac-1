@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeTabState">
+    <option name="tabSessions">
+      <map>
+        <entry key="0">
+          <value>
+            <TabSessionState>
+              <option name="projectPath" value="C:\Users\YouTube\Documents\GitHub\Maniac-1" />
+              <option name="provider" value="claude" />
+              <option name="sessionId" value="56fa1283-f5b2-498d-bb99-cf03166d4eb5" />
+              <option name="cwd" value="C:\Users\YouTube\Documents\GitHub\Maniac-1" />
+              <option name="model" value="claude-sonnet-5[1m]" />
+              <option name="permissionMode" value="bypassPermissions" />
+            </TabSessionState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

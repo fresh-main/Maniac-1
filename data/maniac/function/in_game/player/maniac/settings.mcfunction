@@ -1,6 +1,6 @@
 execute store result storage efm temp byte 1 run scoreboard players operation @s game_health = maniac_max_hp config
 function maniac:in_game/player/health/macros_settings with storage efm
-give @s iron_axe[unbreakable={show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:2,id:"maniac:damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
+give @s iron_axe[item_name='"Ложка"',item_model="spoon",unbreakable={show_in_tooltip:false},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:2,id:"maniac:damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
 item replace entity @s armor.head with chainmail_helmet[item_name='"Маска маньяка"',attribute_modifiers={show_in_tooltip:false,modifiers:[{id:"maniac:protection",amount:0,operation:"add_value",type:"armor",slot:"head"}]},enchantments={levels:{binding_curse:1},show_in_tooltip:false},unbreakable={show_in_tooltip:false},enchantment_glint_override=false]
 attribute @s attack_damage base set 0
 attribute @s attack_speed base set 20
