@@ -1,7 +1,7 @@
 ##Пезагрузка всех дверей
 kill @e[tag=gate_resistor_interaction]
 execute unless score location_index config matches 1 run kill @e[tag=checkpoint_panel]
-execute if score location_index config matches 1 run summon minecraft:interaction 40 10 -165 {Tags:["resistor_interaction","gate_resistor_interaction"],width:1.01f,height:2.0f}
+execute if score location_index config matches 1 run summon minecraft:interaction 41 12 -168 {Tags:["resistor_interaction","gate_resistor_interaction"],width:1.01f,height:2.0f}
 execute if score location_index config matches 1 run function maniac:locations/location_1/checkpoint/panel/setup
 
 #Обычные двери
@@ -135,6 +135,9 @@ execute if score location_index config matches 1 run function maniac:locations/l
   #Кухня 2
      execute positioned -2 9 -64 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
      summon minecraft:interaction -2 9 -64 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от кухни"}}]}
+  #Чердачная дверь локации 1
+     execute if score location_index config matches 1 positioned -3 25 -60 run function maniac:objects/doors/place {facing:"north",hinge:"right"}
+     summon minecraft:interaction -3 25 -60 {Tags: ["roof", "locked_doors"], height: 2, width: 1.01}
   #Запасной выход
      execute positioned -3 9 -49 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
      execute positioned -2 9 -49 run function maniac:objects/doors/place {facing:"south",hinge:"left"}

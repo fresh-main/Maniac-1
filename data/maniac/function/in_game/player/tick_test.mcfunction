@@ -22,7 +22,7 @@ execute as @s[team=police,x=-119,y=9,z=14,dx=2,dy=3,dz=5] run function maniac:in
 
 #Побег через вертолёт
 execute as @s[team=peaceful,x=-166,y=29,z=-7,dx=6,dy=1,dz=2] run function maniac:in_game/escape
-execute if score location_index config matches 1 if block -51 8 -189 minecraft:redstone_block as @s[team=peaceful,x=-53,y=8,z=-189,dx=0,dy=2,dz=3] run function maniac:in_game/escape
+execute if score location_index config matches 1 if block -52 7 -187 minecraft:redstone_block as @s[team=peaceful,x=-54,y=7,z=-187,dx=0,dy=2,dz=3] run function maniac:in_game/escape
 
 
 

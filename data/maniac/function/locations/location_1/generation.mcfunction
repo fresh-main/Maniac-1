@@ -69,7 +69,7 @@
  item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#b6520f","text":"библиотеки"}]',item_model="kluch_15",custom_data={key: "ключ от библиотеки",useCount:1}]
  function maniac:in_game/item_spawn/iterating
 #Генерация аптечек
- data modify storage efm Pos set value [["-149 3 -14"],["-155 2 -7"],["-163 2 -14"],["-163 2 9"],["-163 3 21"],["-138 2 24"],["-129 2 26"],["-131 2 10"],["-159 2 6"],["-126 12 22"],["-147 11 14"],["-148 11 11"],["-142 11 8 "],["-155 11 2"],["-141 11 -14"],["-147 10 -8"],["-158 11 -14"],["-163 11 -10"],["-168 11 -14"],["-165 10 1"],["-170 11 7"],["-137 11 -14"],["-121 10 11"],["-167 20 -8"],["-148 20 -11"],["-144 20 -8"],["-134 19 4"],["-144 20 9"],["-157 20 9"],["-170 20 13"],["-141 21 16"],["-134 21 13"],["-129 20 25"],["-149 21 23 "]]
+ data modify storage efm Pos set value [["-36 16 -82"],["-32 16 -82"],["-32 9 -83"],["-33 10 -107"],["-29 11 -103"],["-5 16 -102"],["-53 8 -87"],["-13 17 -69"],["24 10-47"],["22 10 -51"],["40 11 -142"],["39 11 -148"],["23 11 -139"],["8 10 -166"],["-22 11 -189"],["-1 17 -191"],["-58 10 -154"],["-61 16 -159"],["-33 9 -144"],["-36 16 -143"],["-54 9 -132"],["-58 16 -139"],["-34 10 -127"],["-35 16 -127"],["-59 10 -134"]]
  execute store result score temp global_data if entity @a[team=peaceful]
  execute store result storage efm temp byte 1 run scoreboard players operation temp global_data *= medkits_per_player config
  execute if score temp global_data > max_medkits config store result storage efm temp byte 1 run scoreboard players operation temp global_data = max_medkits config

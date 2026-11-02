@@ -77,9 +77,9 @@ schedule function maniac:out_game/clear 1s
 schedule function maniac:out_game/clear 2s
 setblock -152 1 5 minecraft:cauldron
 setblock -138 19 15 minecraft:cauldron
-execute if score location_index config matches 1 run setblock -51 8 -189 minecraft:air
-execute if score location_index config matches 1 run setblock 29 9 -179 minecraft:cauldron
-execute if score location_index config matches 1 run setblock 11 9 -173 minecraft:cauldron
+execute if score location_index config matches 1 run setblock -52 7 -187 minecraft:air
+execute if score location_index config matches 1 run setblock 30 9 -179 minecraft:cauldron
+execute if score location_index config matches 1 run setblock 9 9 -173 minecraft:cauldron
 
 rotate @n[tag=camera_0] 135 15
 rotate @n[tag=camera_1] -135 45

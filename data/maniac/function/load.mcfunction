@@ -1,3 +1,4 @@
+data modify storage efm location_setting set value "location_index"
 scoreboard objectives add global_data dummy
 data modify storage efm boat set value {enabled:1b,x:54.0d,y:8.0d,z:-86.0d,yaw:0.0f}
 scoreboard objectives add config dummy
@@ -7,6 +8,7 @@ scoreboard objectives add regeneration dummy
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add refueling minecraft.custom:minecraft.use_cauldron
 scoreboard objectives add stan_time dummy
+scoreboard objectives add maniac_spoon_roll dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add count_medkit_used dummy
 scoreboard objectives add game_count dummy
