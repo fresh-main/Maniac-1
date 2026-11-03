@@ -1,6 +1,7 @@
 kill @e[tag=corpse]
 execute if score location_index config matches 1 run setblock -52 7 -187 minecraft:air
-execute if score location_index config matches 1 run function maniac:objects/boat/unload_chunk with storage efm boat
+execute if score location_index config matches 0 run function maniac:objects/boat/unload_chunk with storage efm boat_location_0
+execute if score location_index config matches 1 run function maniac:objects/boat/unload_chunk with storage efm boat_location_1
 kill @e[tag=motor_table_interaction]
 kill @e[tag=motor_table_display]
 kill @e[tag=motor_assembly_display]

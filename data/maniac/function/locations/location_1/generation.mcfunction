@@ -51,7 +51,7 @@
  function maniac:in_game/item_spawn/iterating
 #Генерация монтировки для двери
  data modify storage efm Pos set value [["-33 17 -62"]]
- item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1}]
+ item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:1,id:"maniac:crowbar_damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
  function maniac:in_game/item_spawn/iterating
 #Генерация телефона
  data modify storage efm Pos set value ["-130 11 22 rotated 180 0","-132 11 25 rotated 90 0","-167 11 13 rotated 0 0","-167 11 13 rotated 0 0"]

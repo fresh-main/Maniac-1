@@ -3,6 +3,9 @@
     "hit_maniac_with_crowbar": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
+        "player": {
+          "team": "peaceful"
+        },
         "entity": {
           "type": "minecraft:player",
           "team": "maniac"

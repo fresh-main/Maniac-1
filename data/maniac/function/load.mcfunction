@@ -1,6 +1,8 @@
 data modify storage efm location_setting set value "location_index"
 scoreboard objectives add global_data dummy
-data modify storage efm boat set value {enabled:1b,x:54.0d,y:8.0d,z:-86.0d,yaw:0.0f}
+data modify storage efm boat_location_0 set value {enabled:1b,x:0.0d,y:0.0d,z:0.0d,yaw:0.0f}
+data modify storage efm boat_location_1 set value {enabled:1b,x:54.0d,y:8.0d,z:-86.0d,yaw:0.0f}
+data modify storage efm boat set from storage efm boat_location_1
 scoreboard objectives add config dummy
 scoreboard objectives add game_health dummy
 scoreboard objectives add health health
