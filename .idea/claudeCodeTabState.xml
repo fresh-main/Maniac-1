@@ -8,10 +8,10 @@
             <TabSessionState>
               <option name="projectPath" value="D:\сборки\profiles\маньяк 2-3 1.0.0\saves\Побег от маньяка 2\datapacks\Maniac-1" />
               <option name="provider" value="claude" />
-              <option name="sessionId" value="91535f33-101d-454a-bd06-f87c50c2b869" />
+              <option name="sessionId" value="f3adf68b-2bf5-4b67-8e86-430ce7f44065" />
               <option name="cwd" value="D:\сборки\profiles\маньяк 2-3 1.0.0\saves\Побег от маньяка 2\datapacks\Maniac-1" />
               <option name="model" value="claude-sonnet-5" />
-              <option name="permissionMode" value="default" />
+              <option name="permissionMode" value="auto" />
             </TabSessionState>
           </value>
         </entry>

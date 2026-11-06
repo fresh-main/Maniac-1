@@ -1,4 +1,4 @@
-﻿## Генерация Предметов
+## Генерация Предметов
 # Очистка старых предметов
  kill @e[tag=Item_interact]
  kill @e[tag=Item]
@@ -30,8 +30,7 @@
  item replace block -154 -63 -2 container.5 with potion[custom_name='{"text":"Топливо (1л.)","color":"yellow","italic":false}',potion_contents={potion:"water"},item_model="kanistra"]
  function maniac:in_game/item_spawn/iterating
 #Генерация болтореза и отвёртки
- data modify storage efm Pos set value [["
-20 9 -50","24 9 -49","21 10 -46"]]
+ data modify storage efm Pos set value [["20 9 -50","24 9 -49","21 10 -46"]]
  item replace block -154 -63 -2 container.0 with iron_nugget[item_name='{"color":"blue","text":"Отвёртка"}',custom_data={item: "отвёртка"},item_model="otvertka"]
  function maniac:in_game/item_spawn/iterating
 #Генерация монтировки для двери
@@ -54,7 +53,7 @@
  item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#b6520f","text":"библиотеки"}]',item_model="kluch_15",custom_data={key: "ключ от библиотеки",useCount:1}]
  function maniac:in_game/item_spawn/iterating
 #Генерация аптечек
- data modify storage efm Pos set value [["-36 16 -82"],["-32 16 -82"],["-32 9 -83"],["-33 10 -107"],["-29 11 -103"],["-5 16 -102"],["-53 8 -87"],["-13 17 -69"],["24 10-47"],["22 10 -51"],["40 11 -142"],["39 11 -148"],["23 11 -139"],["8 10 -166"],["-22 11 -189"],["-1 17 -191"],["-58 10 -154"],["-61 16 -159"],["-33 9 -144"],["-36 16 -143"],["-54 9 -132"],["-58 16 -139"],["-34 10 -127"],["-35 16 -127"],["-59 10 -134"]]
+ data modify storage efm Pos set value [["-36 16 -82"],["-32 16 -82"],["-32 9 -83"],["-33 10 -107"],["-29 11 -103"],["-5 16 -102"],["-53 8 -87"],["-13 17 -69"],["24 10 -47"],["22 10 -51"],["40 11 -142"],["39 11 -148"],["23 11 -139"],["8 10 -166"],["-22 11 -189"],["-1 17 -191"],["-58 10 -154"],["-61 16 -159"],["-33 9 -144"],["-36 16 -143"],["-54 9 -132"],["-58 16 -139"],["-34 10 -127"],["-35 16 -127"],["-59 10 -134"]]
  execute store result score temp global_data if entity @a[team=peaceful]
  execute store result storage efm temp byte 1 run scoreboard players operation temp global_data *= medkits_per_player config
  execute if score temp global_data > max_medkits config store result storage efm temp byte 1 run scoreboard players operation temp global_data = max_medkits config

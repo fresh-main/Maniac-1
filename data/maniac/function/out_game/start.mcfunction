@@ -40,6 +40,7 @@ scoreboard players add total game_count 1
 scoreboard players add @a game_count 1
 scoreboard players set escaped global_data 0
 scoreboard players set boat_used global_data 0
+scoreboard players set boat_spawn_attempt global_data 0
 scoreboard players set boat_motor global_data 0
 scoreboard players set boat_fuel global_data 0
 scoreboard players set boat_seats global_data 0
