@@ -43,13 +43,8 @@ scoreboard players set boat_used global_data 0
 scoreboard players set boat_motor global_data 0
 scoreboard players set boat_fuel global_data 0
 scoreboard players set boat_seats global_data 0
-kill @e[tag=escape_boat]
-kill @e[tag=boat_seat]
-kill @e[tag=boat_seat_interaction]
-kill @e[tag=boat_motor_interaction]
-kill @e[tag=boat_motor_display]
+execute in minecraft:overworld run function maniac:objects/boat/cleanup
 tag @a remove boat_rider
-data remove storage efm boat.spawned
 scoreboard players set @a count_medkit_used 0
 scoreboard players set limit_camera_break global_data 12
 

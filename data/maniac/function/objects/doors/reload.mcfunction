@@ -1,7 +1,7 @@
 ##Пезагрузка всех дверей
 kill @e[tag=gate_resistor_interaction]
 execute unless score location_index config matches 1 run kill @e[tag=checkpoint_panel]
-execute if score location_index config matches 1 run summon minecraft:interaction 41 12 -168 {Tags:["resistor_interaction","gate_resistor_interaction"],width:1.01f,height:2.0f}
+execute if score location_index config matches 1 run summon minecraft:interaction 41 12 -168.125 {Tags:["resistor_interaction","gate_resistor_interaction"],width:1.01f,height:2.0f}
 execute if score location_index config matches 1 run function maniac:locations/location_1/checkpoint/panel/setup
 
 #Обычные двери
