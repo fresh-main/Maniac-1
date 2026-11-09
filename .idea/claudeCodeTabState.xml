@@ -6,12 +6,12 @@
         <entry key="0">
           <value>
             <TabSessionState>
-              <option name="projectPath" value="D:\сборки\profiles\маньяк 2-3 1.0.0\saves\Побег от маньяка 2\datapacks\Maniac-1" />
+              <option name="projectPath" value="C:\Users\YouTube\Documents\GitHub\Maniac-1" />
               <option name="provider" value="claude" />
-              <option name="sessionId" value="f3adf68b-2bf5-4b67-8e86-430ce7f44065" />
-              <option name="cwd" value="D:\сборки\profiles\маньяк 2-3 1.0.0\saves\Побег от маньяка 2\datapacks\Maniac-1" />
+              <option name="sessionId" value="36c12e67-03cf-45e9-82f2-62e8d1818cba" />
+              <option name="cwd" value="C:\Users\YouTube\Documents\GitHub\Maniac-1" />
               <option name="model" value="claude-sonnet-5" />
-              <option name="permissionMode" value="auto" />
+              <option name="permissionMode" value="bypassPermissions" />
             </TabSessionState>
           </value>
         </entry>
