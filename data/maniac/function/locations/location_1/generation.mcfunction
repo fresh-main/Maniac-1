@@ -106,6 +106,9 @@
 # Радиостанция для нового побега
 function maniac:objects/radio/spawn
 
+# Грузовик для побега
+function maniac:objects/truck/spawn
+
 # Детали мотора: общий генератор предметов использует storage efm Pos
 data modify storage efm Pos set value [["-18 9 -183"],["-1 16 -201"],["-8 8 -162"],["36 8 -160"],["43 10 -164"],["19 9 -181"],["8 11 -175"],["9 10 -166"],["44 8 -123"],["-18 9 -68"],["-29 18 -52"],["-34 18 -57"],["-35 17 -65"],["-7 17 -70"],["-1 10 -69"]]
 item replace block -154 -63 -2 container.0 with iron_ingot[item_name='{"text":"Корпус мотора","color":"gold","italic":false}',item_model="motor_body",custom_data={motor_part:"body"}]

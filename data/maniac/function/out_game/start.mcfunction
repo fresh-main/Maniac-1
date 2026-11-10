@@ -13,6 +13,13 @@ execute if score maniac_count config matches 1 run function maniac:out_game/team
 execute if score maniac_count config matches 2 run function maniac:out_game/team_set {maniac_count : 2, global_count : 10}
 execute if score maniac_count config matches 3 run function maniac:out_game/team_set {maniac_count : 3, global_count : 14}
 
+tag @a remove truck_driver
+tag @a remove boat_rider
+tag @a remove temp
+tag @a remove spectating
+tag @a remove just_spectator
+tag @a remove break
+
 execute if score safe_switch config matches 1 run function maniac:in_game/event/safezone/safe
 execute if score safe_switch config matches 0 run function maniac:in_game/event/safezone/danger
 
@@ -35,15 +42,29 @@ data modify storage efm switch.hunt set value 0
 data modify storage efm switch.bossbar set value ""
 data modify storage efm switch.police set value 0
 
+# Валидируем карту и инициализируем игровое состояние до генерации и спавна
+execute unless score location_index config matches 0..1 run scoreboard players set location_index config 0
 scoreboard players set game_state global_data 1
 scoreboard players add total game_count 1
 scoreboard players add @a game_count 1
 scoreboard players set escaped global_data 0
+
+# Начальное состояние грузовика
+scoreboard players set truck_fuel global_data 0
+scoreboard players set truck_crowbar_stage global_data 0
+scoreboard players set truck_engine_timer global_data 0
+scoreboard players set truck_engine_starting global_data 0
+scoreboard players set truck_moving global_data 0
+scoreboard players set truck_moving_timer global_data 0
+
+# Начальное состояние лодки
 scoreboard players set boat_used global_data 0
 scoreboard players set boat_spawn_attempt global_data 0
 scoreboard players set boat_motor global_data 0
 scoreboard players set boat_fuel global_data 0
 scoreboard players set boat_seats global_data 0
+execute if score location_index config matches 0 run data modify storage efm boat set from storage efm boat_location_0
+execute if score location_index config matches 1 run data modify storage efm boat set from storage efm boat_location_1
 execute in minecraft:overworld run function maniac:objects/boat/cleanup
 tag @a remove boat_rider
 scoreboard players set @a count_medkit_used 0

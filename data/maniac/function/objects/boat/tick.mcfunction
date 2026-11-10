@@ -1,4 +1,8 @@
-execute in minecraft:overworld if score boat_used global_data matches 0 if data storage efm boat.spawned unless entity @e[tag=escape_boat] run tellraw @a [{"text":"[Лодка] Tick обнаружил маркер без корпуса; сброс и повторная попытка","color":"red"}]
-execute in minecraft:overworld if score boat_used global_data matches 0 if data storage efm boat.spawned unless entity @e[tag=escape_boat] run function maniac:objects/boat/cleanup
-execute in minecraft:overworld if score boat_used global_data matches 0 if score boat_spawn_attempt global_data matches 0 unless data storage efm boat.spawned run function maniac:objects/boat/spawn
-execute as @a[tag=boat_rider] unless data entity @s RootVehicle run function maniac:objects/boat/leave_seat
+# Управление жизненным циклом лодки
+execute unless data storage efm boat{enabled:1b} run return 0
+execute if score boat_used global_data matches 1 run return 0
+execute if data storage efm boat.spawned unless entity @e[tag=boat_display] run data remove storage efm boat.spawned
+execute unless data storage efm boat.spawned run function maniac:objects/boat/spawn
+
+execute as @a[tag=boat_seated] unless data entity @s RootVehicle run function maniac:objects/boat/leave_seat
+execute if score boat_seats_occupied global_data matches 4 if score boat_fuel global_data matches 3 if score boat_motor_installed global_data matches 1 as @a[tag=boat_seated] run title @s actionbar {"text":"Все на борту. Нажмите на мотор для отплытия","color":"green"}
