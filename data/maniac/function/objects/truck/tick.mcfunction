@@ -1,7 +1,10 @@
 # Запуск двигателя длится 40 тиков (2 секунды)
+execute as @e[tag=truck_display] run effect give @s minecraft:glowing 2 0 true
+execute as @e[tag=truck_fuel_interaction] run effect give @s minecraft:glowing 2 0 true
+execute as @e[tag=truck_crowbar_interaction] run effect give @s minecraft:glowing 2 0 true
 execute if score truck_engine_starting global_data matches 1 run scoreboard players add truck_engine_timer global_data 1
-execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 at @e[tag=truck_crowbar_interaction,limit=1] as @a[distance=..1.5] run damage @s 2.0 minecraft:generic
-execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 at @e[tag=truck_crowbar_interaction,limit=1] as @a[distance=..1.5] run tp @s ^ ^ ^2
+execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 at @e[tag=truck_crowbar_interaction,limit=1] as @a[team=peaceful,distance=..1.5] run function maniac:objects/truck/hit_player
+execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 at @e[tag=truck_crowbar_interaction,limit=1] as @a[team=peaceful,distance=..1.5] run tp @s ^ ^ ^2
 execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 run scoreboard players set truck_moving global_data 1
 execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 run scoreboard players set truck_moving_timer global_data 0
 execute if score truck_engine_starting global_data matches 1 if score truck_engine_timer global_data matches 40 run kill @e[tag=truck_crowbar_interaction]
