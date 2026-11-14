@@ -1,5 +1,8 @@
 execute as @e[tag=falling_corpse,nbt={OnGround:1b}] at @s run function maniac:in_game/player/death/place_to_floor
 execute as @e[type=interaction] if data entity @s interaction at @s run function maniac:in_game/interaction
+# Подсветка всех предметов, созданных генератором лута.
+# Эффект обновляется каждый тик, поэтому предметы остаются подсвеченными.
+execute as @e[tag=Item] run effect give @s minecraft:glowing 2 0 true
 execute if score game_state global_data matches 1 run function maniac:objects/boat/tick
 execute if score game_state global_data matches 1 run function maniac:objects/truck/tick
 execute if score game_state global_data matches 1 if score truck_moving global_data matches 0 run execute positioned -34 8 -40 as @a[distance=..1] run title @s actionbar [{"text":"Требуется заправка (","color":"yellow"},{"score":{"name":"truck_fuel","objective":"global_data"}},{"text":"/3)","color":"yellow"}]
