@@ -18,4 +18,4 @@ execute if score location_index config matches 1 run function maniac:locations/l
 
 execute if score elevator1_timer global_data matches 0.. run function maniac:in_game/timer/macros_timer {message:"Лифт приедет на 1 этаж через ", type:"elevator1"}
 execute if score elevator2_timer global_data matches 0.. run function maniac:in_game/timer/macros_timer {message:"Лифт приедет на 2 этаж через ", type:"elevator2"}
-execute if score radio_call_timer global_data matches 1.. run function maniac:objects/radio/call/tick
+

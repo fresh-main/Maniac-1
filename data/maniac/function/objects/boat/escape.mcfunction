@@ -1,8 +1,8 @@
-# Отплытие лодки после полной посадки
+# Отплытие лодки (достаточно одного игрока в лодке)
 execute if score boat_used global_data matches 1 run return 0
 execute unless score boat_motor_installed global_data matches 1 run return run title @s actionbar {"text":"Сначала установите мотор","color":"yellow"}
 execute unless score boat_fuel global_data matches 3 run return run title @s actionbar {"text":"Сначала заправьте лодку","color":"yellow"}
-execute unless score boat_seats_occupied global_data matches 4 run return run title @s actionbar {"text":"В лодке должны быть все 4 игрока","color":"yellow"}
+execute unless score boat_seats_occupied global_data matches 1.. run return run title @s actionbar {"text":"В лодке должен сидеть хотя бы один игрок","color":"yellow"}
 scoreboard players set boat_escape_ready global_data 1
 scoreboard players set boat_used global_data 1
 title @a[tag=boat_seated] actionbar {"text":"Лодка отплыла! Вы сбежали!","color":"green"}

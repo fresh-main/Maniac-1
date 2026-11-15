@@ -13,4 +13,4 @@ execute as @e[tag=boat_seat_3] run effect give @s minecraft:glowing 2 0 true
 execute as @e[tag=boat_seat_4] run effect give @s minecraft:glowing 2 0 true
 
 execute as @a[tag=boat_seated] unless data entity @s RootVehicle run function maniac:objects/boat/leave_seat
-execute if score boat_seats_occupied global_data matches 4 if score boat_fuel global_data matches 3 if score boat_motor_installed global_data matches 1 as @a[tag=boat_seated] run title @s actionbar {"text":"Все на борту. Нажмите на мотор для отплытия","color":"green"}
+execute if score boat_seats_occupied global_data matches 1.. if score boat_fuel global_data matches 3 if score boat_motor_installed global_data matches 1 as @a[tag=boat_seated] run title @s actionbar {"text":"Лодка готова. Нажмите на мотор для отплытия","color":"green"}

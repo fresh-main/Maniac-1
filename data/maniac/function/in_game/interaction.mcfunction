@@ -6,7 +6,7 @@ execute as @s[tag=boat_seat_1] on target as @s[team=peaceful] run function mania
 execute as @s[tag=boat_seat_2] on target as @s[team=peaceful] run function maniac:objects/boat/board
 execute as @s[tag=boat_seat_3] on target as @s[team=peaceful] run function maniac:objects/boat/board
 execute as @s[tag=boat_seat_4] on target as @s[team=peaceful] run function maniac:objects/boat/board
-execute as @s[tag=boat_motor_interaction] on target as @s[team=peaceful] if score boat_motor_installed global_data matches 1 if score boat_fuel global_data matches 3 if score boat_seats_occupied global_data matches 4 run function maniac:objects/boat/escape
+execute as @s[tag=boat_motor_interaction] on target as @s[team=peaceful] if score boat_motor_installed global_data matches 1 if score boat_fuel global_data matches 3 if score boat_seats_occupied global_data matches 1.. run function maniac:objects/boat/escape
 execute as @s[tag=boat_motor_interaction] on target as @s[team=peaceful] if score boat_motor_installed global_data matches 1 unless score boat_fuel global_data matches 3 run function maniac:objects/boat/fuel
 execute as @s[tag=boat_motor_interaction] on target as @s[team=peaceful] unless score boat_motor_installed global_data matches 1 run function maniac:objects/boat/motor
 execute as @s[tag=truck_fuel_interaction] on target as @s[team=peaceful] run function maniac:objects/truck/fuel

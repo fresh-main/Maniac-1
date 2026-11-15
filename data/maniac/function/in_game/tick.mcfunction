@@ -12,3 +12,4 @@ execute if score game_state global_data matches 1 if score truck_fuel global_dat
 execute as @a run function maniac:in_game/player/tick_test
 clear @a glass_bottle
 execute if score @r[team=police] police_peaceful_kill matches 1 run scoreboard players set police_status global_data 4
+execute if score radio_call_timer global_data matches 1.. run function maniac:objects/radio/call/tick
