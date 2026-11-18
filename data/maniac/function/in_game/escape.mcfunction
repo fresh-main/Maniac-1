@@ -7,6 +7,8 @@ execute store result score maniac_count global_data if entity @a[team=maniac]
 execute store result score policeman_count global_data if entity @a[team=police]
 execute if score maniac_count global_data matches 0 run function maniac:in_game/end
 execute if score peaceful_count global_data matches 0 if score policeman_count global_data matches 0 run function maniac:in_game/end
+# Сбежавший выбывает из игры: помечаем его, чтобы полиция (second/start) не выбирала его из команды Hub
+tag @s add just_spectator
 team join Hub
 #scoreboard players operation @s coins += round round_coins
 #tellraw @a [{"text":"+ ","color":"green"},{"score":{"name":"round","objective":"round_coins"},"bold":true,"color":"gold"},{"text":"\u26c3 ","color":"gold"},{"text":"за побег","color":"gray"}]
