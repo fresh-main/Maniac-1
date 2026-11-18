@@ -13,4 +13,4 @@ scoreboard players set truck_engine_starting global_data 0
 scoreboard players set truck_moving global_data 0
 scoreboard players set truck_moving_timer global_data 0
 # Закрытая зона побега за воротами
-fill -45 8 -40 -45 11 -38 minecraft:iron_bars
+fill -46 8 -41 -46 11 -39 minecraft:iron_bars
