@@ -34,24 +34,22 @@
  item replace block -154 -63 -2 container.0 with iron_nugget[item_name='{"color":"blue","text":"Отвёртка"}',custom_data={item: "отвёртка"},item_model="otvertka"]
  function maniac:in_game/item_spawn/iterating
 #Генерация монтировки для двери
- data modify storage efm Pos set value [["-33 17 -62"]]
+ data modify storage efm Pos set value [["-34 17 -63","-30 26 -52","-30 26 -63","4 7 -89"]]
  item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:1,id:"maniac:crowbar_damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
+ item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:1,id:"maniac:crowbar_damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
  function maniac:in_game/item_spawn/iterating
 #Генерация телефона
  data modify storage efm Pos set value ["-130 11 22 rotated 180 0","-132 11 25 rotated 90 0","-167 11 13 rotated 0 0","-167 11 13 rotated 0 0"]
  function maniac:in_game/place_spawn/random_pos
 #Генерация ключей от генераторной в подвале, кабинета дирректора, кабинета секретаря, кухни
- data modify storage efm Pos set value [["-148 21 -10","-138 21 -6","-138 19 -8"],["-130 19 18","-130 21 15","-138 19 9"],["-135 19 29","-135 19 28","-132 20 25","-126 19 25"],["-167 19 -14","-162 19 -14"],["-165 20 -5","-163 19 -6"],["-155 20 1","-150 20 1","-151 19 9"],["-152 19 27","-150 20 23","-151 20 23"],["-139 19 32","-137 19 28"],["-169 19 -3","-169 19 -5"]]
- item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"dark_green","text":"генераторной в подвале"}]',item_model="kluch_6",custom_data={key: "ключ от генераторной в подвале",useCount:1}]
- item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"dark_purple","text":"кабинета директора"}]',item_model="kluch_11",custom_data={key: "ключ от кабинета директора",useCount:1}]
+ data modify storage efm Pos set value [["24 8 -113","-43 8 -118","-15 12 -182"],["-24 18 -192","-12 16 -187","-5 17 -60"],["-56 9 -103","21 9 -148"," 31 8 -59"]]
+ item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#b6520f","text":"библиотеки"}]',item_model="kluch_15",custom_data={key: "ключ от библиотеки",useCount:1}]
+ item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"green","text":"генераторной"}]',item_model="kluch_5",custom_data={key: "ключ от генераторной",useCount:1}]
  item replace block -154 -63 -2 container.2 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"light_purple","text":"кабинета секретаря"}]',item_model="kluch_9",custom_data={key: "ключ от кабинета секретаря",useCount:1}]
  item replace block -154 -63 -2 container.3 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#CD6864","text":"кухни"}]',item_model="kluch_10",custom_data={key: "ключ от кухни",useCount:3}]
+ item replace block -154 -63 -2 container.4 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"green","text":"генераторной"}]',item_model="kluch_5",custom_data={key: "ключ от генераторной",useCount:1}]
  function maniac:in_game/item_spawn/iterating
-#Генерация ключа от библиотеки
- #добавить ещё точек(проверяйте, чтобы точки не совпадали!!!)!!!!!
- data modify storage efm Pos set value [["-171 20 -10","-155 20 8"],["-155 20 11","-134 21 -1"],["-126 19 11"]]
- item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#b6520f","text":"библиотеки"}]',item_model="kluch_15",custom_data={key: "ключ от библиотеки",useCount:1}]
- function maniac:in_game/item_spawn/iterating
+
 #Генерация аптечек
  data modify storage efm Pos set value [["-36 16 -82"],["-32 16 -82"],["-32 9 -83"],["-33 10 -107"],["-29 11 -103"],["-5 16 -102"],["-53 8 -87"],["-13 17 -69"],["24 10 -47"],["22 10 -51"],["40 11 -142"],["39 11 -148"],["23 11 -139"],["8 10 -166"],["-22 11 -189"],["-1 17 -191"],["-58 10 -154"],["-61 16 -159"],["-33 9 -144"],["-36 16 -143"],["-54 9 -132"],["-58 16 -139"],["-34 10 -127"],["-35 16 -127"],["-59 10 -134"]]
  execute store result score temp global_data if entity @a[team=peaceful]

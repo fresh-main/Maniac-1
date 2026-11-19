@@ -105,15 +105,15 @@ execute if score location_index config matches 1 run function maniac:locations/l
    summon minecraft:interaction -156 28 20 {Tags: ["roof", "locked_doors"], height: 2, width: 1.01}
   #Комнаты вожатых
    execute positioned -61 9 -102 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
-      summon minecraft:interaction -61 9 -102 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты вожатых"}}]}
+      summon minecraft:interaction -61 9 -102 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от вожатской"}}]}
    execute positioned -61 9 -98 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
-      summon minecraft:interaction -61 9 -98 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты вожатых"}}]}
+      summon minecraft:interaction -61 9 -98 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от вожатской"}}]}
    execute positioned -61 9 -90 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
-      summon minecraft:interaction -61 9 -90 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты вожатых"}}]}
+      summon minecraft:interaction -61 9 -90 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от вожатской"}}]}
    execute positioned -61 9 -86 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
-      summon minecraft:interaction -61 9 -86 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты вожатых"}}]}
+      summon minecraft:interaction -61 9 -86 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от вожатской"}}]}
    execute positioned -61 9 -82 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
-      summon minecraft:interaction -61 9 -82 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты вожатых"}}]}
+      summon minecraft:interaction -61 9 -82 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от вожатской"}}]}
   #Лодочная станция
    execute positioned 45 9 -100 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
       summon minecraft:interaction 45 9 -100 {Tags: ["key_need", "locked_doors"], height: 2, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от лодочной станции"}}]}
