@@ -7,6 +7,7 @@ kill @e[tag=motor_assembly_display]
 scoreboard players set motor_stage global_data 0
 kill @e[tag=crowbar_hitbox]
 kill @e[type=item]
+bossbar set minecraft:item_glow_hint visible false
 execute as @e[tag=player_doll_model] run function maniac:objects/camera/remove_doll
 tag @a remove spectating
 tag @e remove break

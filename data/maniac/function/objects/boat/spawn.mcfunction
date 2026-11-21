@@ -1,3 +1,5 @@
+# Лодка отключена на локациях без точки спавна
+execute unless data storage efm boat{enabled:1b} run return 0
 # Создание лодки и её interaction-сущностей
 kill @e[tag=boat_display]
 kill @e[tag=boat_seat_1]

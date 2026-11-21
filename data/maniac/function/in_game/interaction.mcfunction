@@ -29,4 +29,5 @@ execute as @s[tag=phone_Enter] run function maniac:objects/phone/enter
 execute as @s[tag=phone_tube_interaction] at @s on target as @s[distance=..2] run function maniac:objects/phone/tube
 execute as @s[tag=camera_interaction] run function maniac:objects/camera/macros with entity @s Passengers[0].data
 execute as @s[tag=camera_pc_interaction] run function maniac:objects/camera_pc/buttons
+execute as @s[tag=l1_camera_pc] on target run function maniac:objects/camera_pc/location_1/open
 data remove entity @s interaction

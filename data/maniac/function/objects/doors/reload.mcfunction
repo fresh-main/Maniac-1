@@ -33,6 +33,38 @@ execute if score location_index config matches 1 run function maniac:locations/l
  execute positioned -133 1 14 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
  execute positioned -122 10 9 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
 
+
+ execute positioned -37 9 -106 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+ execute positioned -37 9 -105 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+ execute positioned -56 9 -115 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
+ execute positioned -56 9 -116 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
+ execute positioned -36 9 -126 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+ execute positioned -36 9 -125 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+ execute positioned -55 9 -135 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
+ execute positioned -55 9 -136 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
+ execute positioned -37 9 -147 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+ execute positioned -37 9 -146 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+ execute positioned -56 9 -155 run function maniac:objects/doors/place {facing:"east",hinge:"right"}
+ execute positioned -56 9 -156 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
+ execute positioned -36 9 -86 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+ execute positioned -36 9 -85 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+
+ execute positioned -2 16 -185 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
+ execute positioned -4 16 -197 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
+ execute positioned -2 16 -199 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
+ execute positioned -23 16 -185 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
+ execute positioned -23 16 -180 run function maniac:objects/doors/place {facing:"north",hinge:"left"}
+ execute positioned -23 9 -177 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
+ execute positioned -21 9 -180 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+ execute positioned -23 9 -185 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
+ execute positioned -13 9 -188 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+ execute positioned 14 9 -180 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+ execute positioned 24 9 -52 run function maniac:objects/doors/place {facing:"north",hinge:"right"}
+ execute positioned -33 9 -56 run function maniac:objects/doors/place {facing:"north",hinge:"left"}
+ execute positioned 12 9 -171 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
+ execute positioned 12 9 -178 run function maniac:objects/doors/place {facing:"south",hinge:"left"}
+ execute positioned 28 9 -176 run function maniac:objects/doors/place {facing:"west",hinge:"left"}
+
  execute positioned -12 17 -58 run function maniac:objects/doors/place {facing:"north",hinge:"right"}
  fill -36 9 -66 -36 10 -66 air replace
  fill -36 9 -68 -36 10 -68 air replace
@@ -95,8 +127,8 @@ execute if score location_index config matches 1 run function maniac:locations/l
    execute positioned -150 1 -10 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
    summon minecraft:interaction -150 1 -10 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от комнаты управления"}}]}
   #Бибилиотека
-   execute positioned -136 10 28 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
-   summon minecraft:interaction -136 10 28 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от библиотеки"}}]}
+   execute positioned -21 16 -189 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
+   summon minecraft:interaction -21 16 -189 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от библиотеки"}}]}
   #Чердак 1
    execute positioned -131 28 6 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
    summon minecraft:interaction -131 28 6 {Tags: ["roof", "locked_doors"], height: 2, width: 1.01}
@@ -136,7 +168,7 @@ execute if score location_index config matches 1 run function maniac:locations/l
      execute positioned -2 9 -64 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
      summon minecraft:interaction -2 9 -64 {Tags: ["key_need", "locked_doors"], height: 2.0, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от кухни"}}]}
   #Чердачная дверь локации 1
-     execute if score location_index config matches 1 positioned -3 25 -60 run function maniac:objects/doors/place {facing:"north",hinge:"right"}
+     execute if score location_index config matches 1 positioned -3 25 -60 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
      summon minecraft:interaction -3 25 -60 {Tags: ["roof", "locked_doors"], height: 2, width: 1.01}
   #Запасной выход
      execute positioned -3 9 -49 run function maniac:objects/doors/place {facing:"south",hinge:"right"}
@@ -174,10 +206,6 @@ execute if score location_index config matches 1 run function maniac:locations/l
    execute positioned -150 10 9 run function maniac:objects/doors/place {facing:"east",hinge:"left"}
    summon minecraft:interaction -150 10 9 {Tags: ["key_need", "locked_doors"], height: 2, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от кухни"}}]}
    summon minecraft:interaction -149.45 10 9 {Tags: ["backdoor_trigger", "locked_doors"], height: 2, width: 1.01}
-  #Кухня 3
-   execute positioned -145 10 9 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
-   summon minecraft:interaction -145 10 9 {Tags: ["key_need", "locked_doors"], height: 2, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от кухни"}}]}
-   summon minecraft:interaction -144.55 10 9 {Tags: ["backdoor_trigger", "locked_doors"], height: 2, width: 1.01}
 
    execute positioned -21 16 -189 run function maniac:objects/doors/place {facing:"west",hinge:"right"}
    summon minecraft:interaction -21 16 -189 {Tags: ["key_need", "locked_doors"], height: 2, width: 1.01, Passengers:[{id:"minecraft:marker", Tags:["door_marker"], data:{key:"ключ от библиотеки"}}]}

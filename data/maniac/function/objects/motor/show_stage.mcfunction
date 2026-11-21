@@ -1,2 +1,2 @@
 kill @e[tag=motor_assembly_display,distance=..2]
-$summon item_display ~ ~1.44 ~ {Tags:["motor_assembly_display"],item_display:"ground",item:{id:"minecraft:iron_ingot",count:1,components:{"minecraft:item_model":"minecraft:$(motor_display_model)"}}}
+$summon minecraft:item_display ~ ~0.5625 ~ {FallDistance:0.0f,Tags:["motor_assembly_display"],height:3.0f,item:{components:{"minecraft:item_model":"minecraft:$(motor_display_model)"},count:1,id:"minecraft:iron_ingot"},item_display:"ground",transformation:{left_rotation:[0.0f,0.0f,-0.67559016f,0.7372774f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0000001f,1.0000001f,1.0f],translation:[0.0f,0.0f,0.0f]},width:3.0f}

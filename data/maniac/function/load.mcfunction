@@ -15,7 +15,7 @@ scoreboard objectives add boat_motor_installed dummy
 scoreboard objectives add boat_seats_occupied dummy
 scoreboard objectives add boat_escape_ready dummy
 scoreboard objectives add escaped dummy
-data modify storage efm boat_location_0 set value {enabled:1b,x:0.0d,y:0.0d,z:0.0d,yaw:0.0f}
+data modify storage efm boat_location_0 set value {enabled:0b,x:0.0d,y:0.0d,z:0.0d,yaw:0.0f}
 data modify storage efm boat_location_1 set value {enabled:1b,x:54.0d,y:8.0d,z:-86.0d,yaw:0.0f}
 data modify storage efm boat set from storage efm boat_location_1
 scoreboard objectives add config dummy
@@ -32,10 +32,23 @@ scoreboard objectives add game_count dummy
 scoreboard objectives add const dummy
 scoreboard objectives add math dummy
 scoreboard objectives add camera_break_time dummy
+scoreboard objectives add l1_camera dummy
+scoreboard objectives add l1_camera_cd dummy
 scoreboard objectives add pickup_timer dummy
 scoreboard objectives add crowbar_cooldown dummy
 scoreboard objectives add crowbar_seconds dummy
 scoreboard objectives add crowbar_math dummy
+scoreboard objectives add item_glow_time dummy
+scoreboard objectives add item_glow_cd dummy
+scoreboard objectives add item_glow_secs dummy
+scoreboard objectives add item_glow_math dummy
+scoreboard objectives remove item_glow_hint
+scoreboard players set #20 item_glow_math 20
+bossbar add minecraft:item_glow_hint {"text":"F — подсветить предметы","color":"yellow"}
+bossbar set minecraft:item_glow_hint max 1
+bossbar set minecraft:item_glow_hint value 1
+bossbar set minecraft:item_glow_hint color yellow
+bossbar set minecraft:item_glow_hint visible false
 scoreboard players set #20 crowbar_math 20
 kill @e[tag=crowbar_hitbox]
 

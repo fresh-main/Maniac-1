@@ -14,7 +14,7 @@ execute unless score truck_moving global_data matches 1 run return 0
 scoreboard players add truck_moving_timer global_data 1
 execute if score truck_moving_timer global_data matches 1..399 as @e[tag=truck_display] at @s run tp @s ~-0.0925 ~ ~
 # Через 5 секунд открываем ворота и выпускаем игроков из зоны побега
-execute if score truck_moving_timer global_data matches 100 run fill -45 8 -40 -45 11 -38 minecraft:air
+execute if score truck_moving_timer global_data matches 100 run fill -46 8 -41 -46 11 -39 minecraft:air
 execute if score truck_moving_timer global_data matches 100 as @a[team=peaceful,x=-45,y=8,z=-40,dx=0,dy=3,dz=2] run function maniac:in_game/escape
-execute if score truck_moving_timer global_data matches 400 run tp @e[tag=truck_display] -73 8 -39
+execute if score truck_moving_timer global_data matches 400 run kill @e[tag=truck_display]
 execute if score truck_moving_timer global_data matches 400 run scoreboard players set truck_moving global_data 0

@@ -1,0 +1,12 @@
+execute if score @s l1_camera matches 0 run function maniac:objects/camera/spectate_location_1 {camera:0}
+execute if score @s l1_camera matches 1 run function maniac:objects/camera/spectate_location_1 {camera:1}
+execute if score @s l1_camera matches 2 run function maniac:objects/camera/spectate_location_1 {camera:2}
+execute if score @s l1_camera matches 3 run function maniac:objects/camera/spectate_location_1 {camera:3}
+execute if score @s l1_camera matches 4 run function maniac:objects/camera/spectate_location_1 {camera:4}
+execute if score @s l1_camera matches 5 run function maniac:objects/camera/spectate_location_1 {camera:5}
+execute if score @s l1_camera matches 6 run function maniac:objects/camera/spectate_location_1 {camera:6}
+execute if score @s l1_camera matches 7 run function maniac:objects/camera/spectate_location_1 {camera:7}
+execute if score @s l1_camera matches 8 run function maniac:objects/camera/spectate_location_1 {camera:8}
+execute if score @s l1_camera matches 9 run function maniac:objects/camera/spectate_location_1 {camera:9}
+execute if score @s l1_camera matches 10 run function maniac:objects/camera/spectate_location_1 {camera:10}
+execute if score @s l1_camera matches 11 run function maniac:objects/camera/spectate_location_1 {camera:11}

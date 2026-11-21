@@ -1,4 +1,4 @@
-clear @s iron_ingot[custom_data={item: "tube"}]
+clear @s iron_ingot[minecraft:custom_data~{item: "tube"}]
 spawnpoint @s ~ ~ ~ ~
 scoreboard players set @s death 0
 gamemode spectator @s

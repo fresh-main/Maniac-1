@@ -1,8 +1,14 @@
 execute as @e[tag=falling_corpse,nbt={OnGround:1b}] at @s run function maniac:in_game/player/death/place_to_floor
 execute as @e[type=interaction] if data entity @s interaction at @s run function maniac:in_game/interaction
-# Подсветка всех предметов, созданных генератором лута.
-# Эффект обновляется каждый тик, поэтому предметы остаются подсвеченными.
-execute as @e[tag=Item] run effect give @s minecraft:glowing 2 0 true
+execute as @a[tag=l1_camera_view] run function maniac:objects/camera_pc/location_1/control
+execute as @a[team=peaceful] if items entity @s weapon.offhand *[minecraft:custom_data~{maniac_glow_key:1b}] run function maniac:in_game/item_glow/press
+execute as @a[team=peaceful] unless items entity @s weapon.offhand *[minecraft:custom_data~{maniac_glow_key:1b}] if items entity @s weapon.mainhand *[minecraft:custom_data~{maniac_glow_key:2b}] run function maniac:in_game/item_glow/press
+execute as @a[team=peaceful] unless items entity @s weapon.mainhand *[minecraft:custom_data~{maniac_glow_key:1b}] if items entity @s weapon.mainhand * run item modify entity @s weapon.mainhand maniac:glow_main
+execute as @a[team=peaceful] unless items entity @s weapon.offhand *[minecraft:custom_data~{maniac_glow_key:2b}] if items entity @s weapon.offhand * run item modify entity @s weapon.offhand maniac:glow_off
+scoreboard players remove @a[team=peaceful,scores={item_glow_cd=1..}] item_glow_cd 1
+scoreboard players remove @a[team=peaceful,scores={item_glow_time=1..}] item_glow_time 1
+execute as @e[type=minecraft:item_display,tag=Item] if entity @a[team=peaceful,scores={item_glow_time=1..}] run data merge entity @s {Glowing:1b}
+execute as @e[type=minecraft:item_display,tag=Item] unless entity @a[team=peaceful,scores={item_glow_time=1..}] run data merge entity @s {Glowing:0b}
 execute if score game_state global_data matches 1 run function maniac:objects/boat/tick
 execute if score game_state global_data matches 1 run function maniac:objects/truck/tick
 execute if score game_state global_data matches 1 if score truck_moving global_data matches 0 run execute positioned -34 8 -40 as @a[distance=..1] run title @s actionbar [{"text":"Требуется заправка (","color":"yellow"},{"score":{"name":"truck_fuel","objective":"global_data"}},{"text":"/3)","color":"yellow"}]

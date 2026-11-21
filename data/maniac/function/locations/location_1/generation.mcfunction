@@ -21,7 +21,7 @@
  item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"yellow","text":"электрощитовой"}]',item_model="kluch_14",custom_data={key: "ключ от электрощитовой",useCount:1}]
  function maniac:in_game/item_spawn/iterating
 #Генерация топлива
- data modify storage efm Pos set value [["-59 8 -150"],["-35 8 -72"],["-13 8 -79"],["22 9 -53"],["18 8 -73"],["45 8 -111"],["30 8 -116"],["42 8 -133"],["19 8 -146"],["3 8 -126"],["-23 8 -123"],["-35 8 -99"],["-56 8 -108"],["-37 9 -129"],["-33 8 -133"],["-54 9 -139"],["-57 9 -140"],["-62 9 -160"],["-40 8 -182"],["-29 8 -176"],["-11 8 -152"],["-20 9 -183"],["-25 9 -180"],["4 8 -160"],["5 8 -150"]]
+ data modify storage efm Pos set value [["-59 8 -150"],["-35 8 -72"],["-13 8 -79"],["22 9 -54"],["18 8 -73"],["45 8 -111"],["30 8 -116"],["42 8 -133"],["19 8 -146"],["3 8 -126"],["-23 8 -123"],["-35 8 -99"],["-56 8 -108"],["-37 9 -129"],["-33 8 -133"],["-54 9 -139"],["-57 9 -140"],["-62 9 -160"],["-40 8 -182"],["-29 8 -176"],["-11 8 -152"],["-20 9 -183"],["-25 9 -180"],["4 8 -160"],["5 8 -151"]]
  item replace block -154 -63 -2 container.0 with potion[custom_name='{"text":"Топливо (1л.)","color":"yellow","italic":false}',potion_contents={potion:"water"},item_model="kanistra"]
  item replace block -154 -63 -2 container.1 with potion[custom_name='{"text":"Топливо (1л.)","color":"yellow","italic":false}',potion_contents={potion:"water"},item_model="kanistra"]
  item replace block -154 -63 -2 container.2 with potion[custom_name='{"text":"Топливо (1л.)","color":"yellow","italic":false}',potion_contents={potion:"water"},item_model="kanistra"]
@@ -30,11 +30,11 @@
  item replace block -154 -63 -2 container.5 with potion[custom_name='{"text":"Топливо (1л.)","color":"yellow","italic":false}',potion_contents={potion:"water"},item_model="kanistra"]
  function maniac:in_game/item_spawn/iterating
 #Генерация болтореза и отвёртки
- data modify storage efm Pos set value [["20 9 -50","24 9 -49","21 10 -46"]]
+ data modify storage efm Pos set value ["20 10 -51","24 9 -49"]
  item replace block -154 -63 -2 container.0 with iron_nugget[item_name='{"color":"blue","text":"Отвёртка"}',custom_data={item: "отвёртка"},item_model="otvertka"]
  function maniac:in_game/item_spawn/iterating
 #Генерация монтировки для двери
- data modify storage efm Pos set value [["-34 17 -63","-30 26 -52","-30 26 -63","4 7 -89"]]
+ data modify storage efm Pos set value [["-34 17 -63"],["-21 10 -63"],["-20 10 -52"],["-25 10 -57"],["4 7 -89"]]
  item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:1,id:"maniac:crowbar_damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
  item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='{"color":"gold","text":"Монтировка","italic":false}',item_model="kluch_16",custom_data={key:"монтировка",useCount:1},attribute_modifiers={show_in_tooltip:false,modifiers:[{amount:1,id:"maniac:crowbar_damage",operation:"add_value",type:"minecraft:attack_damage",slot:"mainhand"}]}]
  function maniac:in_game/item_spawn/iterating
@@ -42,11 +42,11 @@
  data modify storage efm Pos set value ["-130 11 22 rotated 180 0","-132 11 25 rotated 90 0","-167 11 13 rotated 0 0","-167 11 13 rotated 0 0"]
  function maniac:in_game/place_spawn/random_pos
 #Генерация ключей от генераторной в подвале, кабинета дирректора, кабинета секретаря, кухни
- data modify storage efm Pos set value [["24 8 -113","-43 8 -118","-15 12 -182"],["-24 18 -192","-12 16 -187","-5 17 -60"],["-56 9 -103","21 9 -148"," 31 8 -59"]]
+ data modify storage efm Pos set value [["24 8 -113"],["-43 8 -118"],["-15 12 -182"],["-24 18 -192"],["-12 16 -187"],["-5 17 -60"],["-56 9 -103"],["21 9 -148"],[" 31 8 -59"]]
  item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#b6520f","text":"библиотеки"}]',item_model="kluch_15",custom_data={key: "ключ от библиотеки",useCount:1}]
  item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"green","text":"генераторной"}]',item_model="kluch_5",custom_data={key: "ключ от генераторной",useCount:1}]
  item replace block -154 -63 -2 container.2 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"light_purple","text":"кабинета секретаря"}]',item_model="kluch_9",custom_data={key: "ключ от кабинета секретаря",useCount:1}]
- item replace block -154 -63 -2 container.3 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#CD6864","text":"кухни"}]',item_model="kluch_10",custom_data={key: "ключ от кухни",useCount:3}]
+ item replace block -154 -63 -2 container.3 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"#CD6864","text":"кухни"}]',item_model="kluch_10",custom_data={key: "ключ от кухни",useCount:2}]
  item replace block -154 -63 -2 container.4 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"green","text":"генераторной"}]',item_model="kluch_5",custom_data={key: "ключ от генераторной",useCount:1}]
  function maniac:in_game/item_spawn/iterating
 
@@ -84,8 +84,14 @@
 #Генерация батареек для рации
  data modify storage efm Pos set value [["-7 10 -62","-10 10 -57","-1 10 -57"]]
  item replace block -154 -63 -2 container.0 with redstone[item_name='{"color":"red","text":"Батарейка"}',custom_data={item:"батарейка"},item_model="battery"]
+ function maniac:in_game/item_spawn/iterating
 
 
+ function maniac:in_game/item_spawn/iterating
+#Генерация ключа от запасного выхода
+ data modify storage efm Pos set value [["-34 18 -52"],["-2 17 -60"],["-5 17 -60"]]
+ item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"dark_aqua","text":"запасного выхода"}]',item_model="kluch_20",custom_data={key: "ключ от запасного выхода",useCount:1}]
+ item replace block -154 -63 -2 container.1 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"aqua","text":"лодочной станции"}]',item_model="kluch_21",custom_data={key: "ключ от лодочной станции",useCount:1}]
  function maniac:in_game/item_spawn/iterating
 #генерация ключа от кабинета директора
   item replace block -154 -63 -2 container.0 with tripwire_hook[item_name='[{"text":"Ключ от ","color":"gray"},{"color":"dark_purple","text":"кабинета директора"}]',item_model="kluch_11",custom_data={key: "ключ от кабинета директора",useCount:1}]

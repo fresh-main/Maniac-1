@@ -78,8 +78,6 @@ data remove storage efm statistic
 data remove storage efm camera_status
 data modify storage efm switch set value {}
 data remove storage efm boat
-data remove storage efm boat_location_0
-data remove storage efm boat_location_1
 
 # Возврат ворот грузовика в закрытое состояние
 fill -46 8 -41 -46 11 -39 minecraft:iron_bars

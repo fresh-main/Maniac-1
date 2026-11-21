@@ -1,4 +1,5 @@
 tag @s remove spectating
+tag @s remove l1_camera_view
 clear @s carved_pumpkin
 spectate
 gamemode adventure @s

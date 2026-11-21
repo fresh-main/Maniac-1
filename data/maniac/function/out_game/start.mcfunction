@@ -45,6 +45,10 @@ data modify storage efm switch.police set value 0
 # Валидируем карту и инициализируем игровое состояние до генерации и спавна
 execute unless score location_index config matches 0..1 run scoreboard players set location_index config 0
 scoreboard players set game_state global_data 1
+bossbar set minecraft:item_glow_hint players @a[team=peaceful]
+bossbar set minecraft:item_glow_hint visible true
+scoreboard players set @a item_glow_cd 0
+scoreboard players set @a item_glow_time 0
 scoreboard players add total game_count 1
 scoreboard players add @a game_count 1
 scoreboard players set escaped global_data 0
@@ -86,6 +90,7 @@ function maniac:objects/wire/back_fix
 function maniac:objects/phone/reset_display
 function maniac:objects/camera_pc/display/floor_one
 function maniac:objects/camera_pc/debug/reload
+execute if score location_index config matches 1 run function maniac:objects/camera_pc/location_1/setup
 
 function maniac:in_game/generation
 execute positioned -29 17 -56 run function maniac:objects/motor_table/spawn
